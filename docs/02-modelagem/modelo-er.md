@@ -3,7 +3,7 @@
 **Banco de Dados:** PostgreSQL  
 **Versão:** 1.0
 
-## 1. Diagrama ER (Mermaid)
+## 1. Diagrama ER
 
 ```mermaid
 erDiagram

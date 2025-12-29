@@ -6,7 +6,7 @@
 ## 1. Visão Geral
 Este diagrama representa as **Entidades de Domínio**. Evitando acoplamento direto entre os módulos de *Bazar* e *Doação*.
 
-## 2. Diagrama (Mermaid)
+## 2. Diagrama
 
 ```mermaid
 classDiagram
