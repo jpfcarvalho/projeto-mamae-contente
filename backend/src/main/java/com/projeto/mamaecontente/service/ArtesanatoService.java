@@ -40,11 +40,11 @@ public class ArtesanatoService {
     public ArtesanatoDTO update(Long id, ArtesanatoDTO artesanatoDTO) {
         return artesanatoRepository.findById(id)
                 .map(artesanato -> {
-                    artesanato.setNome(artesanatoDTO.nome());
-                    artesanato.setDescricao(artesanatoDTO.descricao());
-                    artesanato.setPreco(artesanatoDTO.preco());
-                    artesanato.setQuantidade(artesanatoDTO.quantidade());
-                    artesanato.setUrlImagem(artesanatoDTO.urlImagem());
+                    artesanato.setNome(artesanatoDTO.getNome());
+                    artesanato.setDescricao(artesanatoDTO.getDescricao());
+                    artesanato.setPreco(artesanatoDTO.getPreco());
+                    artesanato.setQuantidade(artesanatoDTO.getQuantidade());
+                    artesanato.setUrlImagem(artesanatoDTO.getUrlImagem());
                     Artesanato updatedArtesanato = artesanatoRepository.save(artesanato);
                     return artesanatoMapper.toDTO(updatedArtesanato);
                 })

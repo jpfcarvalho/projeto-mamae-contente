@@ -9,12 +9,12 @@ public class ArtesanatoMapper {
 
     public Artesanato toEntity(ArtesanatoDTO dto) {
         Artesanato entity = new Artesanato();
-        entity.setId(dto.id());
-        entity.setNome(dto.nome());
-        entity.setDescricao(dto.descricao());
-        entity.setPreco(dto.preco());
-        entity.setQuantidade(dto.quantidade());
-        entity.setUrlImagem(dto.urlImagem());
+        entity.setId(dto.getId());
+        entity.setNome(dto.getNome());
+        entity.setDescricao(dto.getDescricao());
+        entity.setPreco(dto.getPreco());
+        entity.setQuantidade(dto.getQuantidade());
+        entity.setUrlImagem(dto.getUrlImagem());
         return entity;
     }
 
